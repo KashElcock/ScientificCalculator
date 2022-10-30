@@ -28,7 +28,13 @@ public class mathOps {
     public static double getInverseFactorial(double num1) {
         return num1; }
     public static double toJPYEN(double usd) { return usd * 147.48; }
-
+    public static double tipCalculator(double tipPercentage, double guests, double billTotal) {
+        double tipTotal = (billTotal * (tipPercentage / 100));
+        double tipTotalPerPerson = tipTotal/guests;
+        double billTotalPerPerson = billTotal/guests;
+        double totalOwedPerPerson = tipTotalPerPerson + billTotalPerPerson;
+        return totalOwedPerPerson;
+    }
     public static double toCelsius(double far) {
         double convert = (far - 32) * (5/9);
         return convert; }
