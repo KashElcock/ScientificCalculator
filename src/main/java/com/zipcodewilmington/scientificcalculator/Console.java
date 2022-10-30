@@ -32,7 +32,7 @@ public class Console {
     public static Double getDoubleInput(String prompt) {
         Scanner scanner = new Scanner(System.in);
         println(prompt);
-        double userInput = scanner.nextInt();
+        double userInput = scanner.nextDouble();
         return userInput;
     }
 }
