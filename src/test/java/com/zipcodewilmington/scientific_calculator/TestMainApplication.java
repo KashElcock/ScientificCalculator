@@ -1,10 +1,5 @@
 package com.zipcodewilmington.scientific_calculator;
-
-import com.sun.xml.internal.ws.policy.AssertionSet;
-import com.zipcodewilmington.scientificcalculator.MainApplication;
 import com.zipcodewilmington.scientificcalculator.mathOps;
-import jdk.jfr.internal.tool.Main;
-import org.junit.Assert;
 import org.junit.Test;
 
 import static junit.framework.TestCase.assertEquals;

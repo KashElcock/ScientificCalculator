@@ -25,7 +25,6 @@ public class MainApplication {
                         "                                           \n5. Convert to Pesos " +
                         "                                           \n6. Exit App " +
                         "                                           \n\nEnter the corresponding number: ");
-
                 switch (calcFuncInput) {
                     case 1: //simple
                         Console.println("\n- O P E R A T I O N - M E N U - " +

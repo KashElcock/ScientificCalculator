@@ -43,11 +43,11 @@ public class currentDisplayOps {
             System.exit(0);
         } else if (Objects.equals(operationInput, 7)) { //Clear Display
             currentDisplay = 0.00;
-            Console.println("[NOTICE] Current display value has been reset.");
-        } else if (Objects.equals(operationInput, 8)) { // Reset loop?
             currentDisplayOps.opsDisplayValue(currentDisplay);
+            Console.println("[NOTICE] Current display value has been reset.");
+        } else {
+            //"Number is not listed" condition
         }
-        //return to previous menus = the last else statement
 
         return currentDisplay;
     }
