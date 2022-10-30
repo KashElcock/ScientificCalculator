@@ -83,7 +83,11 @@ public class MainApplication {
                         }   //return to previous menus = the last else statement
                         break;
                     case 3: //tipCalc
-                        Console.println("This is the tip calculator.");
+                        double tipPercentage = Console.getIntegerInput("Welcome to the tip calculator, please enter your tip percentage!");
+                        double guests = Console.getIntegerInput("Please enter your number of guests!");
+                        double billTotal = Console.getIntegerInput("Please enter your bill total!");
+                        double answer = mathOps.tipCalculator( tipPercentage, guests, billTotal);
+                        Console.println("Your amount owed per person is $%,.2f", answer);
                         break;
                     case 4: //currencyConvert
                         Console.println("-- TO JAPANESE YEN --");
