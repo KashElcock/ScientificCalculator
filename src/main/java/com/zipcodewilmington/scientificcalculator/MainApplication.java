@@ -60,16 +60,22 @@ public class MainApplication {
                         int scientificInput = Console.getIntegerInput("\nEnter the corresponding number: ");
                         if (Objects.equals(scientificInput, 1)) {
                             num1 = Console.getDoubleInput("\n- S I N E - \nEnter the a number: ");
+                            Console.println("Sine is: %s", mathOps.getSine(num1));
                         } else if (Objects.equals(scientificInput, 2)) {
                             num1 = Console.getDoubleInput("\n- C O S I N E - \nEnter the a number: ");
+                            Console.println("Cosine is: ", mathOps.getCosine(num1));
                         } else if (Objects.equals(scientificInput, 3)) {
                             num1 = Console.getDoubleInput("\n- T A N G E N T - \nEnter the a number: ");
+                            Console.println("Tangent is: ", mathOps.getTangent(num1));
                         } else if (Objects.equals(scientificInput, 4)) {
                             num1 = Console.getDoubleInput("\n- I N V E R S E - S I N E - \nEnter the a number: ");
+                            Console.println("Inverse Sine is: ", mathOps.getInverseSine(num1));
                         } else if (Objects.equals(scientificInput, 5)) {
                             num1 = Console.getDoubleInput("\n- I N V E R S E - C O S I N E - \nEnter the a number: ");
+                            Console.println("Inverse Cosine: ", mathOps.getInverseCosine(num1));
                         } else if (Objects.equals(scientificInput, 6)) {
                             num1 = Console.getDoubleInput("\n- I N V E R S E - F A C T O R I A L - \nEnter the a number: ");
+                            Console.println("Inverse Factorial: ", mathOps.getInverseFactorial(num1));
                         } else if (Objects.equals(scientificInput, 8)) { //Exit
                             Console.println("-- Closing application --");
                             //exit = true;
