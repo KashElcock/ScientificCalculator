@@ -8,7 +8,15 @@ public class currentDisplayOps {
         double num1 = currentDisplay;
         double num2;
 
-        Console.println("\n-- Operating on Current Value -- \n1. Addition \n2. Subtraction \n3. Multiplication \n4. Division \n5. Function(Main) Menu \n6. Exit App \nCurrent Display: %.2f", currentDisplay);
+        Console.println("\n-- Operating on Current Value -- " +
+                "               \n1. Addition " +
+                "               \n2. Subtraction " +
+                "               \n3. Multiplication " +
+                "               \n4. Division " +
+                "               \n5. Function(Main) Menu " +
+                "               \n6. Exit App " +
+                "               \nCurrent Display: %.2f" +
+                "               \n7. Clear Display", currentDisplay);
         int operationInput = Console.getIntegerInput("\nEnter the corresponding number: ");
         if (Objects.equals(operationInput, 1)) { //addition
             num2 = Console.getDoubleInput("\n- A D D I T I O N - \nEnter the second number: ");
@@ -33,9 +41,13 @@ public class currentDisplayOps {
             Console.println("-- Closing application --");
             //exit = true;
             System.exit(0);
-        } else if (Objects.equals(operationInput, 7)) {
+        } else if (Objects.equals(operationInput, 7)) { //Clear Display
+            currentDisplay = 0.00;
+            Console.println("[NOTICE] Current display value has been reset.");
+        } else if (Objects.equals(operationInput, 8)) { // Reset loop?
             currentDisplayOps.opsDisplayValue(currentDisplay);
-        }   //return to previous menus = the last else statement
+        }
+        //return to previous menus = the last else statement
 
         return currentDisplay;
     }

@@ -5,8 +5,14 @@ public class mathOps {
     public static double subtraction ( double num1, double num2){ return num1 - num2; }
     public static double multiplication ( double num1, double num2){ return num1 * num2; }
     public static double division ( double num1, double num2){ return num1 / num2; }
-    public static double getSquare(double num1) { return num1; }
-    public static double getSquareRoot(double num1) { return num1; }
+    public static double getSquare(double num1) {
+        double squared = Math.pow(num1, 2);
+        return squared;
+    }
+    public static double getSquareRoot(double num1) {
+        double rooted = Math.sqrt(num1);
+        return rooted;
+    }
     public static double getInverse(double num1) { return num1; }
     public static double getSwitchSign(double num1) { return num1; }
     public static double getSine(double num1) {
@@ -28,6 +34,7 @@ public class mathOps {
     public static double getInverseFactorial(double num1) {
         return num1; }
     public static double toJPYEN(double usd) { return usd * 147.48; }
+    public static double toPESO(double usd) { return usd * 19.82; }
     public static double tipCalculator(double tipPercentage, double guests, double billTotal) {
         double tipTotal = (billTotal * (tipPercentage / 100));
         double tipTotalPerPerson = tipTotal/guests;
@@ -35,7 +42,5 @@ public class mathOps {
         double totalOwedPerPerson = tipTotalPerPerson + billTotalPerPerson;
         return totalOwedPerPerson;
     }
-    public static double toCelsius(double far) {
-        double convert = (far - 32) * (5/9);
-        return convert; }
+
 }
