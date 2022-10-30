@@ -9,11 +9,11 @@ public class mathOps {
     public static double getSquareRoot(double num1) { return num1; }
     public static double getInverse(double num1) { return num1; }
     public static double getSwitchSign(double num1) { return num1; }
-    public static double getSin(double num1) { return num1; }
+    public static double getSine(double num1) { return num1; }
     public static double getCosine(double num1) { return num1; }
     public static double getTangent(double num1) { return num1; }
     public static double getInverseSine(double num1) { return num1; }
-    public static double getInverseCosin(double num1) { return num1; }
+    public static double getInverseCosine(double num1) { return num1; }
     public static double getInverseFactorial(double num1) { return num1; }
     public static double toJPYEN(double usd) { return usd * 147.48; }
 
