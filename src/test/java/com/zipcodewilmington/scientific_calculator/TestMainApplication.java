@@ -37,4 +37,34 @@ public class TestMainApplication {
         double answer = 2.0;
         assertEquals(answer, codeOutput);
     }
+    @Test
+    public void tipCalculatorTest() {
+        double codeOutput = mathOps.tipCalculator(20,2,200);
+        double result = 120;
+        assertEquals(result,codeOutput);
+    }
+    @Test
+    public void getSquareTest() {
+        double codeOutput = mathOps.getSquare(8);
+        double result = 64;
+        assertEquals(result,codeOutput);
+    }
+    @Test
+    public void getSquareRootTest() {
+        double codeOutput = mathOps.getSquareRoot(144);
+        double result = 12;
+        assertEquals(result,codeOutput);
+    }
+    @Test
+    public void toPESOTest() {
+        double codeOutput = mathOps.toPESO(1);
+        double result = 19.82;
+        assertEquals(result,codeOutput);
+    }
+    @Test
+    public void toJPYENTest() {
+        double codeOutput = mathOps.toJPYEN(1);
+        double result = 147.48;
+        assertEquals(result,codeOutput);
+    }
 }
