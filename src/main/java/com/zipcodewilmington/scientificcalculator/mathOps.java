@@ -13,8 +13,8 @@ public class mathOps {
         double rooted = Math.sqrt(num1);
         return rooted;
     }
-    public static double getInverse(double num1) { return num1; }
-    public static double getSwitchSign(double num1) { return num1; }
+    public static double getInverse(double num1) { return ( 1 / num1); }
+    public static double getSwitchSign(double num1) { return num1 * (-1); }
     public static double getSine(double num1) {
         String converter = (String) String.format("%.2f", (Math.sin(num1)));
         double convertedSine = Double.parseDouble(converter);

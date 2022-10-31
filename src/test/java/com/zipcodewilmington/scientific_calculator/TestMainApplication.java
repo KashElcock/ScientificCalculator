@@ -33,6 +33,18 @@ public class TestMainApplication {
         assertEquals(answer, codeOutput);
     }
     @Test
+    public void getInverseTest() {
+        double codeOutput = mathOps.getInverse(5.0);
+        double answer = 0.2;
+        assertEquals(answer, codeOutput);
+    }
+    @Test
+    public void getSwitchSign() {
+        double codeOutput = mathOps.getSwitchSign(10.0);
+        double answer = -10.00;
+        assertEquals(answer, codeOutput);
+    }
+    @Test
     public void tipCalculatorTest() {
         double codeOutput = mathOps.tipCalculator(20,2,200);
         double result = 120;

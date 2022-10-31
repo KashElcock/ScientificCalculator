@@ -17,6 +17,8 @@ public class MainApplication {
         while (exit == false) {
 
  //           try {
+ //           } catch (Exception e) { Console.println("[ERROR] Entry is not a number."); }
+
                 int calcFuncInput = Console.getIntegerInput("\n- F U N C T I O N - M E N U - " +
                         "                                           \n1. Simple Calculator " +
                         "                                           \n2. Scientific Calculator " +
@@ -37,7 +39,7 @@ public class MainApplication {
                                 "                   \n7. Prev. Menu " +
                                 "                   \n8. Exit App " +
                                 "                   \nCurrent Display: %.2f", currentDisplay);
-                        Console.println("9. Operate with current value");
+                        Console.println("9. Operate on current value");
                         int operationInput = Console.getIntegerInput("\nEnter the corresponding number: ");
                         if (Objects.equals(operationInput, 1)) { //addition
                             num1 = Console.getDoubleInput("\n- A D D I T I O N - \nEnter the first number: ");
@@ -57,16 +59,17 @@ public class MainApplication {
                         } else if (Objects.equals(operationInput, 4)) { //division
                             num1 = Console.getDoubleInput("\n- D I V I S I O N - \nEnter the first number: ");
                             num2 = Console.getDoubleInput("Enter the second number: ");
-                            currentDisplay = mathOps.division(num1, num2);
-                            Console.println("%,.0f / %,.0f = %,.2f", num1, num2, currentDisplay);
                             if (num2 == 0) {
                                 Console.println("[ERROR] Cannot divide by 0.");
+                            } else {
+                                currentDisplay = mathOps.division(num1, num2);
+                                Console.println("%,.0f / %,.0f = %,.2f", num1, num2, currentDisplay);
                             }
                         } else if (Objects.equals(operationInput, 5)) { //squared
                             num1 = Console.getDoubleInput("\n- S Q U A R E D - \nEnter a number: ");
                             currentDisplay = mathOps.getSquare(num1);
                             Console.println("%,.0f^2 = %,.0f", num1, currentDisplay);
-                        } else if (Objects.equals(operationInput, 6)) { //squared
+                        } else if (Objects.equals(operationInput, 6)) { //square root
                             num1 = Console.getDoubleInput("\n- S Q - R O O T - \nEnter a number: ");
                             currentDisplay = mathOps.getSquareRoot(num1);
                             Console.println("Square Root of %,.0f = %,.0f", num1, currentDisplay);
@@ -139,9 +142,6 @@ public class MainApplication {
                     default:
                         Console.println("[ERROR] Number is not listed.");
                 } //end switch
-/*            } catch (Exception e) {
-                Console.println("[ERROR] Entry is not a number.");
-            } */
         } //end while
     } //end main
 } //end class
